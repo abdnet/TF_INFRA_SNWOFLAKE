@@ -87,12 +87,12 @@ module "databases" {
       privilege = "ALL"
       database  = "DPF_BDRT_DEV"
       roles     = [module.roles.role_names["dev"]]
-    }
+    },
     {
       privilege = "ALL"
       database  = "DPF_BDRT_PROD"
       roles     = [module.roles.role_names["prod"]]
-    }
+    },
     {
       privilege = "ALL"
       database  = "DPF_BDRT_TST"
@@ -104,12 +104,12 @@ module "databases" {
       privilege = "ALL"
       schema    = "PUBLIC"
       roles     = [module.roles.role_names["dev"]]
-    }
+    },
     {
       privilege = "ALL"
       schema    = "PUBLIC"
       roles     = [module.roles.role_names["prod"]]
-    }
+    },
     {
       privilege = "ALL"
       schema    = "PUBLIC"
