@@ -10,7 +10,7 @@ terraform {
     organization = "data_platform"
 
     workspaces {
-      name = "gh-actions-demo"
+      name = "DPF_DEV"
     }
   }
 }
