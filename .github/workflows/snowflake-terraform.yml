@@ -3,7 +3,7 @@ name: "Snowflake Terraform Workflow"
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   snowflake-terraform:
