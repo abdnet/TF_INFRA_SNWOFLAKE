@@ -18,24 +18,7 @@ terraform {
 provider "snowflake" {
 }
 
-module "users" {
-  source = "./modules/users"
-  users = {
-    dev = {
-      name     = "USR_DPF_DBT_SRV_DEV"
-      password = "password"
-      role     = "RL_DPF_RW_BDRT_DEV"
-    }
-    prod = {
-      name     = "USR_DPF_DBT_SRV_PROD"
-      password = "password"
-      role     = "RL_DPF_RW_BDRT_PROD"
-    }
-    tst = {
-      name     = "USR_DPF_DBT_SRV_TST"
-      password = "password"
-      role     = "RL_DPF_RW_BDRT_TST"
-    }
-  }
+resource "snowflake_database" "demo_db" {
+  name    = "DB_FROM_TF"
+  comment = "Database for Snowflake Terraform demo"
 }
-
