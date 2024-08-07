@@ -19,6 +19,6 @@ provider "snowflake" {
 }
 
 resource "snowflake_database" "demo_db" {
-  name    = "DB_FROM_TF"
+  name    = "DB_FROM_TF_1"
   comment = "Database for Snowflake Terraform demo"
 }
